@@ -1,0 +1,163 @@
+:root{
+    --main-color:#bf8c4c;
+    --seconed-color:#232323;
+    --white-color:#fff;
+    --body-color:#828282;
+    --border-color:#e4e4e4;
+
+}
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--body-color);
+}
+h1{
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+/* home */
+section.home{
+    background-image: url(../images/cover.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
+}
+.home-link a::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 0;
+    left: -10px; 
+    transition: width 1s;
+    opacity: .7;
+
+    
+}
+.home-link a:hover::before{
+   width: calc(100% + 40px);
+}
+.home-link i{
+    transition: transform 1s;
+}
+.home-link:hover i{
+    transform: translateX(30%);
+
+}
+.home-img{
+    transition: all 1s;
+}
+.home-img:hover{
+    transform: matrix(1,0,0,1,-22,3 );
+}
+/* coustom */
+section.service{
+    border-bottom: 1px solid #e4e4e4;
+}
+.coustom i{
+ font-size: 35px;
+}
+/* about */
+
+.sec-img{
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}
+.head p::before{
+  content: "";
+  width: 40px;
+  height: 2px;
+  margin-right: 1.25rem;
+  background-color: var(--main-color);
+   position: absolute;
+  left: -60px;
+  transform: translate(10px, 10px);
+}
+.sec-button{
+    border-color: var(--main-color);
+    background-color:black;
+    color: var(--white-color);
+}
+.sec-button:hover{
+background: transparent;
+color: var(--main-color);
+border-color:var(--main-color) ;
+}
+.sec-head::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--main-color);
+    top: 10px ;
+    left: 38%;
+    position: absolute;
+    margin-left: 50px ;
+
+}
+.sec-head::after{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--main-color);
+    right: 38%;
+    top: 10px;
+    margin-right:50px ;
+    position: absolute;
+
+}
+.maiin a{
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 50%;
+}
+.banner{
+    transform: translateY(calc(100% - 105px));
+    transition: all 1s;
+}
+.banner p , .banner a{
+    opacity: 0;
+}
+.speacil-item:hover .banner{
+    background-color: black;
+    transform: translateY(0px);
+}
+.speacil-item:hover p, .speacil-item:hover a{
+    opacity: 1;
+    color: white;
+}
+.speacil-item:hover .banner a i{
+    transform: translateY(100%);
+    opacity: 0;
+}
+.speacil-item:hover .sec-button:hover{
+    background: transparent;
+    color: var(--main-color);
+    border-color:var(--main-color) ;  
+}
+.pro-item span{
+    transform: translatex(20%);
+    transform-origin:left center ;
+    transition: transform 0.3s cubic-bezier(0.2, 0.95, 0.25, 1)0s ;
+    display: inline-block;
+}
+.pro-item i{
+    transform: scale(0) translateX(0);
+    transition: transform 0.3s cubic-bezier(0.2, 0.95, 0.25, 1) 0s;
+    transform-origin: left center;
+
+}
+.pro-item:hover i{
+    transform: scale(1) translateX(0);
+
+}
+.pro-item:hover span{
+    transform: translateX(0);
+}

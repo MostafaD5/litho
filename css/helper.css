@@ -1,0 +1,38 @@
+.text-main{
+    color: var(--main-color);
+}
+.text-seconed{
+    color: var(--seconed-color);
+}
+.sec-padding{
+    padding-block: 55px ;
+}
+.w-70{
+    width: 70%;
+}
+.text-medieum{
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.btn-cos{
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border: 2px solid transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.bg-section{
+    background-color: #f9f6f3;
+}
+.sec-head{
+font-size: 16px;
+position: relative;
+
+}
+.sub-header{
+    font-weight: 700;
+    color: black;
+
+}
