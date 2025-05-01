@@ -10,5 +10,7 @@ Litho is a responsive and modern frontend website template built with **HTML5**,
 - ⚙️ Easy to customize
 - 🌐 Cross-browser compatible
 
-## 📁 Project Structure
+## 🌐 Live Demo
+
+👉 [View Litho Live](https://mostafad5.github.io/litho/)
 
